@@ -3,16 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 @Entity (name = "Inversionista")
 public class Inversionista {
-<<<<<<< HEAD
-    private String nombre;
-    private String apellido;
-    private String correo;
-    private String celular;
-    private List<Criptomoneda> criptomonedas = new ArrayList<>();
-    private Variacion interes;
-    public void setInteres(Variacion interes) {
-        this.interes = interes;
-=======
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_Inversoinista")
@@ -35,21 +25,9 @@ public class Inversionista {
 
     @Column(name = "Variacion")
     private Variacion variacion;
-
-
     public void setVariacion(Variacion variacion) {
         this.variacion = variacion;
->>>>>>> ac53c2237495c46e3fc08f2908e7e8d2c173f5f5
     }
-    public void comprobarDisponibilidad() {
-    }
-<<<<<<< HEAD
-    public void analizarTendencias(Integer margen){}
-=======
-
-    public void analizarTendencias(Integer margen) {
-    }
-
->>>>>>> ac53c2237495c46e3fc08f2908e7e8d2c173f5f5
-
+    public void comprobarDisponibilidad() {}
+    public void analizarTendencias(Integer margen) {}
 }
