@@ -11,5 +11,10 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="db/Hibernate" uuid="b3dc064c-4079-4869-b0db-74ac256a4b4f">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>

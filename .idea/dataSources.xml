@@ -8,5 +8,16 @@
       <jdbc-url>jdbc:mysql://localhost:3306/SRI</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="db/Hibernate" uuid="b3dc064c-4079-4869-b0db-74ac256a4b4f">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/Tomás/Desktop/UTN/3RO/Diseño de Sistemas/Actividad 1P DDS SRI/TP-DDS-P1/src/main/resources/META-INF/persistence.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/SRI</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
