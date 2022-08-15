@@ -1,4 +1,4 @@
 public enum Disponibilidad {
     DISPONIBLE,
-    INDISPONIBLE;
+    INDISPONIBLE
 }
