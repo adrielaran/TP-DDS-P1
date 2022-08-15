@@ -3,8 +3,10 @@ public class OtrasRecomendaciones extends Alerta {
         super(nuevoReceptor);
     }
 
-    public OtrasRecomendaciones copiar(Inversionista nuevoReceptor){
+    public OtrasRecomendaciones copiar(Inversionista nuevoReceptor) {
         return new OtrasRecomendaciones(nuevoReceptor);
-    };
+    }
+
+    ;
 };
 
