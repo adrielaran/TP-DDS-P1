@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TP-DDS-P1
 =======
 # Entrega Parcial-DDS
@@ -22,4 +21,3 @@ Adjuntamos a continuacion los vinculos importantes del Trabajo
 * [Documentacion Utilizada](https://adjuntar.com/)
 * * [API Criptomonedas](https://adjuntar.com/)
 * * [Base de datos](https://adjuntar.com/)
->>>>>>> 73d170ca0e66a876a864117cdd3b55f8f5d3bcc1

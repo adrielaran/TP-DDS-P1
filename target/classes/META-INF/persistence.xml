@@ -8,15 +8,11 @@
     <persistence-unit name="db" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>db.CriptomonedaEntity</class>
-        <class>db.InversionistaEntity</class>
-        <class>db.PrecioEntity</class>
-
         <properties>
             <property name="hibernate.archive.autodetection" value="class"/>
 
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/SRI" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/SistemaDeRecomendacionDeInversiones" />
             <property name="hibernate.connection.username" value="root" />
             <property name="hibernate.connection.password" value="123456" />
 

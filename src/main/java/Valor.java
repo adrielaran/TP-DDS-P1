@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Precio {
+public class Valor {
     private Integer valorActual;
     private Float capitalizacion;
     private Float volumen;
