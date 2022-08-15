@@ -7,8 +7,8 @@
 * * Email: aadriel@frba.utn.edu.ar
 
 * Tomas Barbieri
-* * Legajo: xxx.xxx-x
-* * Email: @frba.utn.edu.ar
+* * Legajo: 171.395-4
+* * Email: tbarbieribedini@frba.utn.edu.ar
 
     
 ## Diagrama de Clases
