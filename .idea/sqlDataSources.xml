@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="a28138f6-7aa7-4637-8ed7-f6d5800e92ae" name="SRI@localhost Mapping">
+      <data-sources db="7eaebd67-c261-4031-8a39-822d9e891f9a" ddl="9e2db0fe-06d5-47fb-a686-27aaa74e241d" />
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="9e2db0fe-06d5-47fb-a686-27aaa74e241d" />
+          <option name="name" value="SRI@localhost (DDL)" />
+          <option name="languageId" value="MySQL" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/Script-BD_SistemaDeRecomendacionDeInversiones.sql" />
+            </array>
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
