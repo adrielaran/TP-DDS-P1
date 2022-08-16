@@ -18,18 +18,22 @@ public class AdapterAPICoinCripto {
      private Valor valorDOGE = new Valor(client.getPrice("dogecoin","usd",false,false,false,false).get("dogecoin").get("usd"),LocalDateTime.now());
      private Valor valorTether = new Valor(client.getPrice("tether","usd",false,false,false,false).get("tether").get("usd"),LocalDateTime.now());
      private Valor valorADA = new Valor(client.getPrice("cardano","usd",false,false,false,false).get("cardano").get("usd"),LocalDateTime.now());
+
+    public Criptomoneda getBitcoin() { return bitcoin; }
+    public Criptomoneda getEthereum() { return ethereum; }
+    public Criptomoneda getDogecoin() {return dogecoin; }
+    public Criptomoneda getTether() { return tether; }
+    public Criptomoneda getCardano() { return cardano; }
+
     private Criptomoneda bitcoin = new Criptomoneda("bitcoin", Disponibilidad.DISPONIBLE,valorBTC);
       private Criptomoneda ethereum = new Criptomoneda("ethereum", Disponibilidad.DISPONIBLE,valorETH);
       private Criptomoneda dogecoin = new Criptomoneda("dogecoin", Disponibilidad.DISPONIBLE,valorDOGE);
       private Criptomoneda tether = new Criptomoneda("tether", Disponibilidad.DISPONIBLE,valorTether);
       private Criptomoneda cardano = new Criptomoneda("cardano", Disponibilidad.DISPONIBLE,valorADA);
+
       private List<Criptomoneda> criptomonedas = new ArrayList<>(Arrays.asList(bitcoin,ethereum,dogecoin,tether,cardano));
 
-    public Criptomoneda getBitcoin() {return bitcoin;}
-    public Criptomoneda getEthereum() {return ethereum;}
-    public Criptomoneda getDogecoin() {return dogecoin;}
-    public Criptomoneda getTether() {return tether;}
-    public Criptomoneda getCardano() {return cardano;}
+
     @Scheduled(fixedRate = 60000) //Actualiza cada 5 segundos
     public void actualizacionDePrecios() {
         Valor newValorBTC = new Valor(client.getPrice("bitcoin","usd",false,false,false,false).get("bitcoin").get("usd"),LocalDateTime.now());
