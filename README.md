@@ -13,11 +13,9 @@
 * * Email: tbarbieribedini@frba.utn.edu.ar
 
     
-## Diagrama de Clases
-
+## Documentacion
+* * * 
 Adjuntamos a continuacion los vinculos importantes del Trabajo
 * [Diagrama de clases | DDS | Parcial 1](https://app.diagrams.net/#G18Nb15-Y1d4FcDwp68NCfPqeZ5dKPZ0jW)
-* [Informe](https://adjuntar.com/)
-* [Documentacion Utilizada](https://adjuntar.com/)
-* * [API Criptomonedas](https://adjuntar.com/)
-* * [Base de datos](https://adjuntar.com/)
+* * [API Criptomonedas](https://www.coingecko.com/es/api/documentation)
+* * [Presentacion del TP](https://docs.google.com/presentation/d/1I7Oy6MD95Fb5Vg5SrYS6lT2PUvJCDrBwpWV0tVZnpXY/edit?usp=sharing)
