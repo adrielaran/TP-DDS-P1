@@ -1,7 +1,8 @@
+package domain;
+
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
-@Entity (name = "Inversionista")
+@Entity (name = "tareasprogramadas.Inversionista")
 public class Inversionista {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,10 +21,10 @@ public class Inversionista {
     @Column(name = "Celular")
     private String celular;
 
-    @OneToMany(mappedBy = "Inversionista", cascade = {CascadeType.ALL}, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "tareasprogramadas.Inversionista", cascade = {CascadeType.ALL}, fetch = FetchType.LAZY)
     private List<Criptomoneda> criptomonedas;
 
-    @Column(name = "Variacion")
+    @Column(name = "tareasprogramadas.Variacion")
     private Variacion variacion;
     public void setVariacion(Variacion variacion) {
         this.variacion = variacion;

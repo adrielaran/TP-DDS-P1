@@ -14,7 +14,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="TP-DDS-P1" options="-parameters" />
+      <module name="TP-DDS-P1" options="-parameters --add-exports java.base/java=ALL-UNNAMED" />
     </option>
   </component>
 </project>

@@ -1,3 +1,5 @@
+package domain;
+
 public class Alerta extends Aviso {
     public Alerta(Inversionista nuevoReceptor) {
         super(nuevoReceptor);
