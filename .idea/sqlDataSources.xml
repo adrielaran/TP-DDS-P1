@@ -14,20 +14,4 @@
       <data-sources db="bd9bd5fa-41fe-4283-9d4e-af9ef1c40474" ddl="7e1ec168-a562-48c7-88ca-e1638159df0c" />
     </mapping>
   </component>
-  <component name="SqlDataSourceStorage">
-    <option name="dataSources">
-      <list>
-        <State>
-          <option name="id" value="7e1ec168-a562-48c7-88ca-e1638159df0c" />
-          <option name="name" value="@localhost (DDL)" />
-          <option name="languageId" value="MySQL" />
-          <option name="urls">
-            <array>
-              <option value="file://$PROJECT_DIR$/Script-BD_SistemaDeRecomendacionDeInversiones3.sql" />
-            </array>
-          </option>
-        </State>
-      </list>
-    </option>
-  </component>
 </project>

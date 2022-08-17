@@ -2,25 +2,42 @@ package domain;
 
 import javax.persistence.*;
 
-@Entity (name = "domain.Criptomoneda")
+@Entity
+@TableGenerator(name = "criptomoneda")
 public class Criptomoneda {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column(name = "id_Criptomoneda")
-    private Integer id_Criptomoneda;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_criptomoneda", nullable = false)
+    private Long id_criptomoneda;
 
-    @ManyToOne
-    @JoinColumn (name = "id_Inversionista")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_inversionista")
     private Inversionista inversionista;
 
-    @Column(name = "Nombre")
+    @Column
     private String nombre;
 
-    @Column(name = "domain.Disponibilidad")
+    @Column
     private Disponibilidad disponibilidad;
 
-    @Column(name = "domain.Valor")
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_valor")
     private Valor valor;
+
+    public Long getId_criptomoneda() {
+        return id_criptomoneda;
+    }
+
+    public void setId_criptomoneda(Long id_criptomoneda) {
+        this.id_criptomoneda = id_criptomoneda;
+    }
+
+    public Criptomoneda(Inversionista inversionista) {
+        this.inversionista = inversionista;
+    }
+
+    public Criptomoneda() {}
+
     public Valor getValor() {
         return valor;
     }
@@ -33,5 +50,37 @@ public class Criptomoneda {
         this.nombre = nombre;
         this.disponibilidad = disponibilidad;
         this.valor = valor;
+    }
+
+    public long getId_Criptomoneda() {
+        return id_criptomoneda;
+    }
+
+    public void setId_Criptomoneda(long id_Criptomoneda) {
+        this.id_criptomoneda = id_Criptomoneda;
+    }
+
+    public Inversionista getInversionista() {
+        return inversionista;
+    }
+
+    public void setInversionista(Inversionista inversionista) {
+        this.inversionista = inversionista;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Disponibilidad getDisponibilidad() {
+        return disponibilidad;
+    }
+
+    public void setDisponibilidad(Disponibilidad disponibilidad) {
+        this.disponibilidad = disponibilidad;
     }
 }
